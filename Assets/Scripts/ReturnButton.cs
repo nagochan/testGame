@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ContinueScript : MonoBehaviour
+public class ReturnButton : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -19,13 +19,6 @@ public class ContinueScript : MonoBehaviour
 
     public void OnClick()
     {
-        StartCoroutine("changeScene");
-    }
-
-    IEnumerator changeScene()
-    {
-        yield return new WaitForSeconds(2);
-
-        SceneManager.LoadScene("playScreen");
+        SceneManager.LoadScene("Start");
     }
 }

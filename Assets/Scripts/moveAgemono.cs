@@ -10,11 +10,15 @@ public class moveAgemono : MonoBehaviour
     Slider widthSlider;
     float barWidth;
     public GameObject enemy;
+    int count = 3;
+    bool pressEsc = false;
+    public bool Esc = false;
+    
     // Start is called before the first frame update
     void Start()
     {
-        //create Enemy.
-        StartCoroutine("createEnemy");
+        //count down!
+        StartCoroutine("countDown");
 
         //get Slider.
         slider = GameObject.Find("BarWidth");
@@ -29,6 +33,9 @@ public class moveAgemono : MonoBehaviour
 
         //Change Bar Width.
         changeWidth();
+
+        //Verification pause
+        //pause();
     }
 
     void barMove()
@@ -49,6 +56,23 @@ public class moveAgemono : MonoBehaviour
         transform.localScale = new Vector3(barWidth, 1, 1);
     }
 
+    IEnumerator countDown()
+    {
+        GameObject countObj = GameObject.Find("Count");
+        while (count != 0)
+        {
+            Text countText = countObj.GetComponent<Text>();
+            countText.text = count.ToString();
+            yield return new WaitForSeconds(1);
+            count--;
+        }
+
+        //create Enemy.
+        StartCoroutine("createEnemy");
+        Esc = true;
+        Destroy(countObj);
+    }
+
     IEnumerator createEnemy()
     {
         while (true)
@@ -60,4 +84,5 @@ public class moveAgemono : MonoBehaviour
             enemyObj.name = "enemy";
         }
     }
+
 }
