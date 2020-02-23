@@ -1,17 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class moveEnemy : MonoBehaviour {
-	[SerializeField] float enemySpeed = 0.1f;
+	Slider enemySpeed;
+	public GameObject slider;
+	float speed;
 	// Use this for initialization
 	void Start () {
-		
+		slider = GameObject.Find("EnemySpeed");
+		enemySpeed = slider.GetComponent<Slider>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate(0, 0, -enemySpeed);
+		speed = enemySpeed.value;
+		transform.Translate(0, 0, -speed);
 		Destroy(this.gameObject, 10);
 	}
 
