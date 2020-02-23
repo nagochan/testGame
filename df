@@ -1,0 +1,162 @@
+[33mcommit 08a6100e1fc63864d0f5e885c45aa046f15d0c0b[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/gameOver[m[33m, [m[1;31morigin/feature/gameOver[m[33m)[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 16:41:57 2020 +0800
+
+    マージ！
+
+[33mcommit 1b15f7bd04fa479e3616da127515a25e051b83ed[m
+Merge: 469fe65 d07ea2d
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 16:40:06 2020 +0800
+
+    Merge branch 'develop' of https://github.com/nagochan/newzerokara into feature/gameOver
+
+[33mcommit 469fe65eaaf4bac8894c81f6e466d1b62869ad76[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 16:39:54 2020 +0800
+
+    Revert "Merge branch 'develop' of https://github.com/nagochan/newzerokara into feature/gameOver"
+    
+    This reverts commit 6f8df88ea1706c6f9ab960ae58609d2343b2d807, reversing
+    changes made to f055cb545b204f3c478b9d3ee8689ae24ed01832.
+
+[33mcommit d07ea2dbc73c49485c8c0e42aa73942bdfda0e59[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mdevelop[m[33m)[m
+Merge: 382e36c 6f8df88
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 17:38:22 2020 +0900
+
+    Merge pull request #3 from nagochan/feature/gameOver
+    
+    Feature/game over
+
+[33mcommit 6f8df88ea1706c6f9ab960ae58609d2343b2d807[m
+Merge: f055cb5 382e36c
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 16:37:33 2020 +0800
+
+    Merge branch 'develop' of https://github.com/nagochan/newzerokara into feature/gameOver
+
+[33mcommit f055cb545b204f3c478b9d3ee8689ae24ed01832[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 16:36:17 2020 +0800
+
+    Update ProjectSettings.asset
+
+[33mcommit cff1d5542d648f73ec5f8e07f8618238e35e23cc[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 16:32:11 2020 +0800
+
+    Update .gitignore
+
+[33mcommit 382e36c21435295e6cbacfde7ec7ccddadd4d7ae[m
+Merge: d542403 9c9e063
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 17:24:11 2020 +0900
+
+    Merge pull request #2 from nagochan/feature/playScreen
+    
+    Feature/play screen
+
+[33mcommit 9c9e063493a32eecc5df2026c313e40ee485357e[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 16:13:40 2020 +0800
+
+    Update manifest.json
+
+[33mcommit 667d5d392bedb738154eeb381407621e288e6a73[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 16:13:25 2020 +0800
+
+    ？
+
+[33mcommit 81228e1dd5191bf692c342c44ba4e430c89f738e[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 16:10:56 2020 +0800
+
+    Delete scripts.meta
+
+[33mcommit 0e26ebe8e60cb1de98690da528b760bc094925f2[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 16:10:28 2020 +0800
+
+    こんてぃにゅーぼたんとかつくった
+
+[33mcommit de10a7e9a1605bb6aa52e4022c7f0a757624a03b[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 16:05:21 2020 +0800
+
+    完成させた
+
+[33mcommit 588acbfdc189ba0a6cdaa3e0e97b0edf1476ec6e[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 15:24:15 2020 +0800
+
+    ゲームオーバーの文字色を変えるプログラムを書きかけた
+
+[33mcommit 8228359ecad6470bc3670e75fb54d955a12ade1e[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 13:07:07 2020 +0800
+
+    Delete manifest.json
+
+[33mcommit f5351c3a6da6ce363b003b130711627499d7b713[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 12:29:02 2020 +0800
+
+    game overシーンを消した
+    
+    ゲームオーバーシーンは、feature/playScreenを編集して作る
+
+[33mcommit 3045776f4500ebb7dfa6688fc12750b1cb089827[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 12:27:43 2020 +0800
+
+    ファイルを整理してみた
+
+[33mcommit 5a8ae65dd69faada7471867b989f21ffe783f2e0[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 12:26:44 2020 +0800
+
+    create gameover scene.
+
+[33mcommit c278198681b056fef3eb88520504aaf34cc20ed8[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 12:23:55 2020 +0800
+
+    gameoverシーンを作っただけ
+
+[33mcommit 23ad2afe70ff5c605c0bcaba65fdc546f5e29d44[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sun Feb 23 12:21:35 2020 +0800
+
+    スピードとBOXの幅をスライダーで調整できるようにしてみた
+    
+    ゲームオーバー画面とスタート画面も作りたい...
+
+[33mcommit 121574226ade71872c552aa6beb9ff8b49196118[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Sat Feb 22 21:46:17 2020 +0800
+
+    ゲームの基本的なシステムを作った
+    
+    あとはバーを調整したい
+
+[33mcommit ee2e913a24ec2d078c461b77f0148ec2db4101cf[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Mon Feb 17 21:27:04 2020 +0900
+
+    簡単なステージを作って、移動させてみた
+    
+    強制スクロールだ！
+
+[33mcommit d0dbe3c1a0ce65cb6025f52779bb578d00399d52[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Mon Feb 17 21:16:22 2020 +0900
+
+    playScreenを作成した
+
+[33mcommit d5424035ecedac38675a0fded0b9da1fe974bb61[m
+Author: nagochan <41363672+nagochan@users.noreply.github.com>
+Date:   Mon Feb 17 20:11:41 2020 +0800
+
+    Initial commit
