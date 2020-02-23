@@ -24,16 +24,15 @@ public class changeTXTColor : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(1.5f);
             if (colorbool)
             {
                 color.color = new Color(1.0f, 0, 0, 1);
                 colorbool = false;
-                Debug.LogError("change!");
             }
             else
             {
-                color.color = new Color(1, 1, 1, 1);
+                color.color = new Color(0, 0, 0, 1);
                 colorbool = true;
             }
         }
