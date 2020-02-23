@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/changeTXTColor.cs.meta
+guid: 864b7b32fe896b44696b110457018874
+=======
 guid: e6a6c6f370063254f946a609c8c3d2b7
+>>>>>>> 382e36c21435295e6cbacfde7ec7ccddadd4d7ae:Assets/moveEnemy.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
