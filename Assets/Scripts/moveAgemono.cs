@@ -40,7 +40,7 @@ public class moveAgemono : MonoBehaviour
     void barMove()
     {
         if (Input.GetKey(KeyCode.A) && transform.position.x > -4.4) {
-            transform.Translate(-forawdSpeed, 0, 0);
+            transform.Translate(-forawdSpeed , 0, 0);
         }
         if (Input.GetKey(KeyCode.D) && transform.position.x < 4.4)
         {
