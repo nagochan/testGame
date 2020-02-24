@@ -21,6 +21,6 @@ public class ExitGame : MonoBehaviour
     {
         kakuninCanvas.SetActive(true);
         Application.Quit();
-        oya.SetActive(false);
+        //oya.SetActive(false);
     }
 }
