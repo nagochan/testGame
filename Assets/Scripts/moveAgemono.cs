@@ -11,7 +11,6 @@ public class moveAgemono : MonoBehaviour
     float barWidth;
     public GameObject enemy;
     int count = 3;
-    bool pressEsc = false;
     public bool Esc = false;
     
     // Start is called before the first frame update
@@ -79,7 +78,7 @@ public class moveAgemono : MonoBehaviour
         {
             yield return new WaitForSeconds(2);
             float randomX = Random.Range(-4, 4);
-            Vector3 enemyPos = new Vector3(randomX, 0.5f, -15f);
+            Vector3 enemyPos = new Vector3(randomX, 1f, -15f);
             GameObject enemyObj = Instantiate(enemy, enemyPos, Quaternion.identity);
             enemyObj.name = "enemy";
         }

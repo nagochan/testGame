@@ -7,11 +7,9 @@ public class menu : MonoBehaviour
 {
     bool isEsc = false;
     public GameObject plane,agemono, canvasoya;
-    public GameObject haikei;
     public GameObject[] hontai;
     public GameObject[] back;
-    
-    int count = 3;
+    bool pushContinue = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,40 +19,49 @@ public class menu : MonoBehaviour
         {
             gmobj.SetActive(false);
         }
-        StartCoroutine("countDown");
     }
 
     // Update is called once per frame
-    [System.Obsolete]
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        //judge display menu button.
+        Esc();
+    }
+
+    void Esc()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) || pushContinue)
         {
-            if (!isEsc) {
+            pushContinue = false;
+            if (!isEsc)
+            {
                 isEsc = true;
-                foreach(GameObject gmobj in hontai)
-                {
-                    gmobj.SetActive(false);
-                }
-                foreach(GameObject gmobj in back)
-                {
-                    Debug.Log(gmobj.active);
-                    gmobj.SetActive(true);
-                }
-                Debug.Log(back.Length);
+                displayMenu();
+                Time.timeScale = 0;
             }
-            else {
+            else
+            {
                 isEsc = false;
-                StartCoroutine("countDown");
-                foreach(GameObject gmobj in hontai)
-                {
-                    gmobj.SetActive(true);
-                }
-                foreach(GameObject gmobj in back)
-                {
-                    gmobj.SetActive(false);
-                }
+                displayMenu();
+                Time.timeScale = 1;
             }
         }
+    }
+
+    void displayMenu()
+    {
+        foreach(GameObject obj in back)
+        {
+            if (isEsc)
+                obj.SetActive(true);
+            else
+                obj.SetActive(false);
+        }
+    }
+
+    public void OnClick()
+    {
+        isEsc = true;
+        pushContinue = true;
     }
 }

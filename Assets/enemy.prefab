@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 135765530064596256}
   - component: {fileID: 23104491568145008}
   - component: {fileID: 114524938527755932}
+  - component: {fileID: 2815913926061741371}
   m_Layer: 0
   m_Name: enemy
   m_TagString: hontai
@@ -107,3 +108,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 0}
+--- !u!54 &2815913926061741371
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113273621827888}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 6
+  m_CollisionDetection: 0
