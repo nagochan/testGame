@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExitGame : MonoBehaviour
+public class kakuniMenu : MonoBehaviour
 {
-    public GameObject kakuninCanvas,oya;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,13 +13,11 @@ public class ExitGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Time.timeScale = 1;
+            this.gameObject.SetActive(false);
+        }
 
-    }
-
-    public void OnClick()
-    {
-        kakuninCanvas.SetActive(true);
-        Application.Quit();
-        oya.SetActive(false);
     }
 }
