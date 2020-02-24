@@ -437,8 +437,9 @@ GameObject:
   - component: {fileID: 943156015}
   - component: {fileID: 943156014}
   - component: {fileID: 943156013}
+  - component: {fileID: 943156016}
   m_Layer: 5
-  m_Name: difficult
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -506,7 +507,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 943156014}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 943156016}
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &943156014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,6 +555,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943156011}
   m_CullTransparentMesh: 0
+--- !u!114 &943156016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943156011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71bd355856a3a8e4da164bc3139c1e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &954450324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,7 +1192,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Difficulty
+  m_Text: Exit
 --- !u!222 &1979884065
 CanvasRenderer:
   m_ObjectHideFlags: 0

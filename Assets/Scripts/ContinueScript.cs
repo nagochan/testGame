@@ -24,7 +24,7 @@ public class ContinueScript : MonoBehaviour
 
     IEnumerator changeScene()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.5f);
 
         SceneManager.LoadScene("playScreen");
     }

@@ -19,7 +19,7 @@ public class ExitGame : MonoBehaviour
 
     public void OnClick()
     {
-        kakuninCanvas.SetActive(true);
+        //kakuninCanvas.SetActive(true);
         Application.Quit();
         //oya.SetActive(false);
     }
